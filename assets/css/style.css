@@ -61,6 +61,206 @@ Version: 1.1
 /* ---
 	1. Global
 ---*/
+.gradient-container {
+  /* This is where the magic happens */
+  filter: url(#goo) blur(40px);
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --color-bg-a: rgb(108, 0, 162);
+  --color-bg-b: rgb(0, 17, 82);
+
+  --color-a: 18, 113, 255;
+  --color-b: 221, 74, 255;
+  --color-c: 100, 220, 255;
+  --color-d: 200, 50, 50;
+  --color-e: 180, 180, 50;
+
+  --color-interactive: 148, 100, 255;
+  --size: 80%;
+  --blend: hard-light;
+}
+.g1,
+.g2,
+.g3,
+.g4,
+.g5 {
+  position: absolute;
+  mix-blend-mode: var(--blend);
+}
+
+.g1 {
+  /* Gradient is visible only to 50%. Bubble is half transparent */
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color-a), 0.8) 0,
+      rgba(var(--color-a), 0) 50%
+    )
+    no-repeat;
+
+  width: var(--size);
+  height: var(--size);
+
+  /* Place the bubble in the center of the container */
+  top: calc(50% - var(--size) / 2);
+  left: calc(50% - var(--size) / 2);
+
+  transform-origin: center center;
+  animation: bounceV 30s ease infinite;
+
+  opacity: 1;
+}
+
+.g2 {
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color-b), 0.8) 0,
+      rgba(var(--color-b), 0) 50%
+    )
+    no-repeat;
+
+  width: var(--size);
+  height: var(--size);
+
+  /* Place the bubble relative to the center of the container */
+  top: calc(50% - var(--size) / 2);
+  left: calc(50% - var(--size) / 2);
+
+  transform-origin: calc(50% - 400px);
+  animation: moveInCircle 20s reverse infinite;
+
+  opacity: 1;
+}
+
+.g3 {
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color-c), 0.8) 0,
+      rgba(var(--color-c), 0) 50%
+    )
+    no-repeat;
+
+  width: var(--size);
+  height: var(--size);
+
+  /* Place the bubble relative to the center of the container */
+  top: calc(50% - var(--size) / 2 + 200px);
+  left: calc(50% - var(--size) / 2 - 500px);
+
+  transform-origin: calc(50% + 400px);
+  animation: moveInCircle 40s linear infinite;
+
+  opacity: 1;
+}
+
+.g4 {
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color-d), 0.8) 0,
+      rgba(var(--color-d), 0) 50%
+    )
+    no-repeat;
+
+  width: var(--size);
+  height: var(--size);
+
+  /* Place the bubble relative to the center of the container */
+  top: calc(50% - var(--size) / 2);
+  left: calc(50% - var(--size) / 2);
+
+  transform-origin: calc(50% - 200px);
+  animation: bounceH 40s ease infinite;
+
+  opacity: 0.7;
+}
+
+.g5 {
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color-e), 0.8) 0,
+      rgba(var(--color-e), 0) 50%
+    )
+    no-repeat;
+
+  width: calc(var(--size) * 2);
+  height: calc(var(--size) * 2);
+
+  /* Place the bubble relative to the center of the container */
+  top: calc(50% - var(--size));
+  left: calc(50% - var(--size));
+
+  transform-origin: calc(50% - 800px) calc(50% + 200px);
+  animation: moveInCircle 20s ease infinite;
+
+  opacity: 1;
+}
+
+.interactive {
+  position: absolute;
+
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color-interactive), 0.8) 0,
+      rgba(var(--color-interactive), 0) 50%
+    )
+    no-repeat;
+
+  width: 100%;
+  height: 100%;
+
+  mix-blend-mode: var(--blend);
+
+  top: -50%;
+  left: -50%;
+
+  opacity: 0.7;
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounceV {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes bounceH {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+
+.bubbles-container svg {
+  display: none;
+}
+.bubbles-container {
+  background: linear-gradient(40deg, var(--color-bg-a), var(--color-bg-b));
+  height: 100vh;
+  overflow: hidden;
+}
 * {
   outline: none;
   box-sizing: border-box;
@@ -1130,14 +1330,21 @@ hr {
 *[data-onovo-overlay] {
   position: relative;
 }
-
+.genkiz-contact .onovo-overlay{
+  z-index: 0;
+  background-color: #0000005c !important;
+}
+.onovo-hover-label .container{
+  z-index: 1;
+  position:relative;
+}
 .onovo-overlay {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #fff ;
   transition: transform 0.6s cubic-bezier(0.3, 0, 0.3, 1);
   -webkit-transition: transform 0.6s cubic-bezier(0.3, 0, 0.3, 1);
   transform-origin: top right;
@@ -5890,7 +6097,6 @@ ul.onovo-footer-menu li {
 	15. Brands
 ---*/
 .onovo-brands {
-  padding: 30px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -5909,7 +6115,6 @@ ul.onovo-footer-menu li {
 .onovo-brands .image img {
   width: auto;
   height: auto;
-  max-height: 80px;
 }
 
 /*---
