@@ -1,9 +1,9 @@
 /**
-*	Onovo - Creative Portfolio Agency HTML Template
+*	Genkiz - Creative Portfolio Agency HTML Template
 *	Version: 1.1
 *	Author: bslthemes
 *	Author URL: http://themeforest.net/user/bslthemes
-*	Copyright © Onovo by bslthemes. All Rights Reserved.
+*	Copyright © Genkiz by bslthemes. All Rights Reserved.
 **/
 
 ( function( $ ) {
@@ -601,7 +601,7 @@
 	});
 
 	/*
-		- Onovo Button
+		- Genkiz Button
 	*/
 	$('button.onovo-btn.onovo-hover-btn').each(function() {
 		var btn_text = $(this).text();
@@ -609,7 +609,7 @@
 	});
 
 	/*
-		- Onovo Pagination
+		- Genkiz Pagination
 	*/
 	$('.pager').each(function() {
 		var btn_next = $(this).find('.next');
@@ -621,7 +621,7 @@
 	});
 
 	/*
-		- Onovo Portfolio
+		- Genkiz Portfolio
 	*/
 	var $container = $('.onovo-portfolio-items');
 	$container.imagesLoaded(function() {
@@ -632,7 +632,7 @@
 	});
 
 	/*
-		- Onovo Filter
+		- Genkiz Filter
 	*/
 	$('.onovo-filter-nav-active').each(function() {
 		$(this).css({'width':$(this).closest('.onovo-filter.filter--default').find('.item--active').parent().width()+6+'px'});
