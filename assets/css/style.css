@@ -61,6 +61,9 @@ Version: 1.1
 /* ---
 	1. Global
 ---*/
+.genkiz-team-two .image.genkiz-hover-3.genkiz-hover-black-30 {
+  background: #e5e5e5;
+}
 .gradient-container {
   /* This is where the magic happens */
   filter: url(#goo) blur(40px);
