@@ -36,19 +36,19 @@
 		Splitting
 	**/
 	Splitting({ by: 'lines' });
-	ScrollOut({targets: '[data-onovo-scroll]', once: true});
+	ScrollOut({targets: '[data-genkiz-scroll]', once: true});
 
 	$('.word').wrap('<span></span>');
-	$('[data-onovo-overlay]').append('<div class="onovo-overlay"></div>');
+	$('[data-genkiz-overlay]').append('<div class="genkiz-overlay"></div>');
 
 	/**
 		Header Sticky
 	**/
-	if($('.onovo-header').length) {
+	if($('.genkiz-header').length) {
 	var new_scroll_position = 0;
 	var last_scroll_position;
 	$(window).on('scroll', function() {
-		var header = $('.onovo-header');
+		var header = $('.genkiz-header');
 		last_scroll_position = window.scrollY;
 
 		// Scrolling down
@@ -76,34 +76,34 @@
 	/**
 		Header Menu Button
 	**/
-	$('.onovo-menu-btn').on('click', function(){
+	$('.genkiz-menu-btn').on('click', function(){
 		var obj = $(this);
 		if(obj.hasClass('btn--active')) {
-			$('body').removeClass('onovo--noscroll');
-			$('.onovo-header').removeClass('header--active');
+			$('body').removeClass('genkiz--noscroll');
+			$('.genkiz-header').removeClass('header--active');
 			obj.removeClass('btn--active');
-			obj.addClass('onovo--notouch');
-			obj.parent().find('.onovo-menu-popup').removeClass('menu--ready');
-			obj.parent().find('.onovo-menu-container').addClass('onovo--noscroll');
+			obj.addClass('genkiz--notouch');
+			obj.parent().find('.genkiz-menu-popup').removeClass('menu--ready');
+			obj.parent().find('.genkiz-menu-container').addClass('genkiz--noscroll');
 			setTimeout(function(){
-				obj.parent().find('.onovo-menu-popup').removeClass('menu--open');
+				obj.parent().find('.genkiz-menu-popup').removeClass('menu--open');
 			}, 300);
 			setTimeout(function(){
-				obj.removeClass('onovo--notouch');
-				obj.parent().find('.onovo-menu-popup').removeClass('menu--visible');
+				obj.removeClass('genkiz--notouch');
+				obj.parent().find('.genkiz-menu-popup').removeClass('menu--visible');
 			}, 1600);
 		}
 		else {
-			$('body').addClass('onovo--noscroll');
-			$('.onovo-header').addClass('header--active');
+			$('body').addClass('genkiz--noscroll');
+			$('.genkiz-header').addClass('header--active');
 			obj.addClass('btn--active');
-			obj.addClass('onovo--notouch');
-			obj.parent().find('.onovo-menu-popup').addClass('menu--visible');
-			obj.parent().find('.onovo-menu-popup').addClass('menu--open');
+			obj.addClass('genkiz--notouch');
+			obj.parent().find('.genkiz-menu-popup').addClass('menu--visible');
+			obj.parent().find('.genkiz-menu-popup').addClass('menu--open');
 			setTimeout(function(){
-				obj.removeClass('onovo--notouch');
-				obj.parent().find('.onovo-menu-container').removeClass('onovo--noscroll');
-				obj.parent().find('.onovo-menu-popup').addClass('menu--ready');
+				obj.removeClass('genkiz--notouch');
+				obj.parent().find('.genkiz-menu-container').removeClass('genkiz--noscroll');
+				obj.parent().find('.genkiz-menu-popup').addClass('menu--ready');
 			}, 600);
 		}
 		return false;
@@ -112,16 +112,16 @@
 	/*
 		Top Menu Close
 	*/
-	$('.onovo-menu').on('click', 'a', function(){
+	$('.genkiz-menu').on('click', 'a', function(){
 		if (!$(this).parent().hasClass('menu-item-has-children')){
-			$('.onovo-header .onovo-menu-btn.btn--active').trigger('click');
+			$('.genkiz-header .genkiz-menu-btn.btn--active').trigger('click');
 		}
 	});
 
 	/*
 		Header Menu Dropdown
 	*/
-	$('.onovo-menu').on('click', '.menu-item-has-children > .icon, .dropdown-link > a', function(){
+	$('.genkiz-menu').on('click', '.menu-item-has-children > .icon, .dropdown-link > a', function(){
 		if($(this).closest('li').hasClass('opened')) {
 			$(this).closest('li').removeClass('opened');
 		} else {
@@ -135,15 +135,15 @@
 		Footer Sticky
 	*/
 	if($('.footer--fixed').length) {
-		var footer_fixed = $('.footer--fixed .onovo-footer').height();
+		var footer_fixed = $('.footer--fixed .genkiz-footer').height();
 		$('.wrapper').css({'margin-bottom':footer_fixed+'px'});
 	}
 
 	/*
 		Intro Style
 	*/
-	if($('.onovo-intro.intro--black').length) {
-		$('.onovo-header').addClass('header--white');
+	if($('.genkiz-intro.intro--black').length) {
+		$('.genkiz-header').addClass('header--white');
 	}
 
 	/*
@@ -161,9 +161,9 @@
 			css3: true,
 			loopTop: heroParallax_loop,
 			loopBottom: heroParallax_loop,
-			sectionSelector: '.onovo-hero-parallax-section',
+			sectionSelector: '.genkiz-hero-parallax-section',
 			afterRender: function() {
-				if (heroParallax.find('.onovo-hero-parallax-section.active').hasClass('section--dark')) {
+				if (heroParallax.find('.genkiz-hero-parallax-section.active').hasClass('section--dark')) {
 					setDark();
 				}
 				$('#pp-nav').append('<div class="pp-nav-active"></div>');
@@ -176,7 +176,7 @@
 				});
 			},
 			afterLoad: function (anchorLink, index) {
-				var current = heroParallax.find('.onovo-hero-parallax-section.active');
+				var current = heroParallax.find('.genkiz-hero-parallax-section.active');
 				var current_pos = $('#pp-nav ul li a.active').position().top;
 				$('.pp-nav-active').css({'top':current_pos+'px'});
 				if (current.hasClass('section--dark')) {
@@ -204,16 +204,16 @@
 		});
 	});
 	function setDark() {
-		$('.onovo-page').addClass('parallax--dark');
-		$('.onovo-header').removeClass('header--white');
-		$('.onovo-hero-parallax .onovo-prev').removeClass('nav--white');
-		$('.onovo-hero-parallax .onovo-next').removeClass('nav--white');
+		$('.genkiz-page').addClass('parallax--dark');
+		$('.genkiz-header').removeClass('header--white');
+		$('.genkiz-hero-parallax .genkiz-prev').removeClass('nav--white');
+		$('.genkiz-hero-parallax .genkiz-next').removeClass('nav--white');
 	}
 	function removeDark() {
-		$('.onovo-page').removeClass('parallax--dark');
-		$('.onovo-header').addClass('header--white');
-		$('.onovo-hero-parallax .onovo-prev').addClass('nav--white');
-		$('.onovo-hero-parallax .onovo-next').addClass('nav--white');
+		$('.genkiz-page').removeClass('parallax--dark');
+		$('.genkiz-header').addClass('header--white');
+		$('.genkiz-hero-parallax .genkiz-prev').addClass('nav--white');
+		$('.genkiz-hero-parallax .genkiz-next').addClass('nav--white');
 	}
 
 	/*
@@ -234,7 +234,7 @@
 		} else {
 			heroMainSwiper_loop = false;
 		}
-		heroMainSwiper.find('.onovo-paginations-container').append('<div class="swiper-nav-active"></div>');
+		heroMainSwiper.find('.genkiz-paginations-container').append('<div class="swiper-nav-active"></div>');
 		var mainSliderSelector = new Swiper(heroMainSwiper, {
 			slidesPerView: 1,
 			spaceBetween: 0,
@@ -359,7 +359,7 @@
 		} else {
 			blogSwiper_loop = false;
 		}
-		blogSwiper.parent().find('.onovo-paginations-container').append('<div class="swiper-nav-active"></div>');
+		blogSwiper.parent().find('.genkiz-paginations-container').append('<div class="swiper-nav-active"></div>');
 		var blogCarousel = new Swiper(blogSwiper, {
 			slidesPerView: '2',
 			noSwipingSelector: 'a',
@@ -455,7 +455,7 @@
 		} else {
 			var hisSwiper_auto = false;
 		}
-		hisSwiper.find('.onovo-paginations-container').append('<div class="swiper-nav-active"></div>');
+		hisSwiper.find('.genkiz-paginations-container').append('<div class="swiper-nav-active"></div>');
 		var hisCarousel = new Swiper(hisSwiper, {
 			slidesPerView: 1,
 			noSwipingSelector: 'a',
@@ -490,7 +490,7 @@
 	/*
 		- Hero Video Mute/Unmute
 	*/
-	$('.onovo-play-btn').on( 'click', function (){
+	$('.genkiz-play-btn').on( 'click', function (){
 		if( $(this).parent().parent().find('video').prop('muted') ) {
 			$(this).parent().parent().find('video').prop('muted', false);
 			$(this).addClass('active');
@@ -505,14 +505,14 @@
 	/*
 		- Services Hover
 	*/
-	$('.onovo-service-grid-item.active--default').each(function() {
-		$(this).closest('.onovo-services-grid-fw').hover(function(){
-			if ($(this).find('.onovo-service-grid-item').hasClass('active--default')) {
-				$(this).find('.onovo-service-grid-item').removeClass('active');
+	$('.genkiz-service-grid-item.active--default').each(function() {
+		$(this).closest('.genkiz-services-grid-fw').hover(function(){
+			if ($(this).find('.genkiz-service-grid-item').hasClass('active--default')) {
+				$(this).find('.genkiz-service-grid-item').removeClass('active');
 			}
 	  },function(){
-			if ($(this).find('.onovo-service-grid-item').hasClass('active--default')) {
-				$(this).find('.onovo-service-grid-item.active--default').addClass('active');
+			if ($(this).find('.genkiz-service-grid-item').hasClass('active--default')) {
+				$(this).find('.genkiz-service-grid-item.active--default').addClass('active');
 			}
 	  });
 	});
@@ -520,19 +520,19 @@
 	/*
 		- Number Text
 	*/
-	$('.onovo-circle-text .label').each(function() {
+	$('.genkiz-circle-text .label').each(function() {
 		$(this).html($(this).text().split('').map((char, i) => `<span style="transform:rotate(${i * 8.5}deg)">${char}</span>`).join(''));
 	});
 
 	/*
 		- Portfolio Showcase Hover
 	*/
-	if ($('.onovo-showcase-items').length) {
-		$('.onovo-showcase-items').find('.onovo-showcase-item:first-child').addClass('hover');
+	if ($('.genkiz-showcase-items').length) {
+		$('.genkiz-showcase-items').find('.genkiz-showcase-item:first-child').addClass('hover');
 	}
-	$('.onovo-showcase-item').mouseenter(function(){
+	$('.genkiz-showcase-item').mouseenter(function(){
 		var obj = $(this);
-		obj.closest('.onovo-showcase-items').find('.onovo-showcase-item').removeClass('hover');
+		obj.closest('.genkiz-showcase-items').find('.genkiz-showcase-item').removeClass('hover');
 		obj.addClass('hover');
 	});
 
@@ -540,10 +540,10 @@
 		- Services Showcase Hover
 	*/
 	if ($(window).width() > 767) {
-		if ($('.onovo-services-showcase').length) {
-			$('.onovo-services-showcase').find('.items ul li:first-child').addClass('hover');
+		if ($('.genkiz-services-showcase').length) {
+			$('.genkiz-services-showcase').find('.items ul li:first-child').addClass('hover');
 		}
-		$('.onovo-services-showcase .items ul li .title').mouseenter(function(){
+		$('.genkiz-services-showcase .items ul li .title').mouseenter(function(){
 			var obj = $(this).closest('li');
 			obj.closest('ul').find('li').removeClass('hover');
 			obj.addClass('hover');
@@ -553,9 +553,9 @@
 	/**
 		- Video
 	**/
-	$('.onovo-video').on('click', '.play, .image', function(){
-		$(this).closest('.onovo-video').addClass('active');
-		var iframe = $(this).closest('.onovo-video').find('.js-video-iframe');
+	$('.genkiz-video').on('click', '.play, .image', function(){
+		$(this).closest('.genkiz-video').addClass('active');
+		var iframe = $(this).closest('.genkiz-video').find('.js-video-iframe');
 		largeVideoPlay(iframe);
 		return false;
 	});
@@ -567,7 +567,7 @@
 	/**
 		- Counter
 	**/
-	$('.onovo-counter').each(function() {
+	$('.genkiz-counter').each(function() {
 		var numbers = $(this).find('.js-counter');
 		var animationIsDone = false;
 		var scroll = $(window).scrollTop() + $(window).height();
@@ -603,7 +603,7 @@
 	/*
 		- Genkiz Button
 	*/
-	$('button.onovo-btn.onovo-hover-btn').each(function() {
+	$('button.genkiz-btn.genkiz-hover-btn').each(function() {
 		var btn_text = $(this).text();
 		$(this).html('<span>'+btn_text+'</span>');
 	});
@@ -616,17 +616,17 @@
 		var btn_prev = $(this).find('.prev');
 		btn_next.html('<i></i>');
 		btn_prev.html('<i></i>');
-		btn_next.addClass('onovo-next onovo-hover-2');
-		btn_prev.addClass('onovo-prev onovo-hover-2');
+		btn_next.addClass('genkiz-next genkiz-hover-2');
+		btn_prev.addClass('genkiz-prev genkiz-hover-2');
 	});
 
 	/*
 		- Genkiz Portfolio
 	*/
-	var $container = $('.onovo-portfolio-items');
+	var $container = $('.genkiz-portfolio-items');
 	$container.imagesLoaded(function() {
 		$container.isotope({
-			itemSelector: '.onovo-portfolio-col',
+			itemSelector: '.genkiz-portfolio-col',
 			percentPosition: true,
 		});
 	});
@@ -634,35 +634,35 @@
 	/*
 		- Genkiz Filter
 	*/
-	$('.onovo-filter-nav-active').each(function() {
-		$(this).css({'width':$(this).closest('.onovo-filter.filter--default').find('.item--active').parent().width()+6+'px'});
+	$('.genkiz-filter-nav-active').each(function() {
+		$(this).css({'width':$(this).closest('.genkiz-filter.filter--default').find('.item--active').parent().width()+6+'px'});
 	});
-	$('.onovo-filter').on( 'click', 'button', function() {
+	$('.genkiz-filter').on( 'click', 'button', function() {
 		var filterValue = $(this).attr('data-filter');
 		$container.isotope({ filter: filterValue });
 		$(filterValue).find('.image').attr('data-scroll','in');
 		$(filterValue).find('.splitting').attr('data-scroll','in');
 
-		$('.onovo-filter button').removeClass('item--active');
+		$('.genkiz-filter button').removeClass('item--active');
 		$(this).addClass('item--active');
 
-		var current_pos = $(this).closest('.onovo-filter.filter--default').find('.item--active').parent().position().left;
-		var current_width = $(this).closest('.onovo-filter.filter--default').find('.item--active').parent().width();
-		$(this).closest('.onovo-filter.filter--default').find('.onovo-filter-nav-active').css({'width':current_width+6+'px'});
-		$(this).closest('.onovo-filter.filter--default').find('.onovo-filter-nav-active').css({'left':current_pos-3+'px'});
+		var current_pos = $(this).closest('.genkiz-filter.filter--default').find('.item--active').parent().position().left;
+		var current_width = $(this).closest('.genkiz-filter.filter--default').find('.item--active').parent().width();
+		$(this).closest('.genkiz-filter.filter--default').find('.genkiz-filter-nav-active').css({'width':current_width+6+'px'});
+		$(this).closest('.genkiz-filter.filter--default').find('.genkiz-filter-nav-active').css({'left':current_pos-3+'px'});
 	});
 
 	/**
 		Collapse
 	**/
-	$('.onovo-collapse-item').on('click', '.onovo-collapse-btn', function(){
-		if($(this).closest('.onovo-collapse-item').hasClass('opened')) {
-			$(this).closest('.onovo-collapse-item').removeClass('opened');
+	$('.genkiz-collapse-item').on('click', '.genkiz-collapse-btn', function(){
+		if($(this).closest('.genkiz-collapse-item').hasClass('opened')) {
+			$(this).closest('.genkiz-collapse-item').removeClass('opened');
 			$(this).removeClass('active');
 			$(this).next().slideUp();
 		}
 		else {
-			$(this).closest('.onovo-collapse-item').addClass('opened');
+			$(this).closest('.genkiz-collapse-item').addClass('opened');
 			$(this).addClass('active');
 			$(this).next().slideDown();
 		}

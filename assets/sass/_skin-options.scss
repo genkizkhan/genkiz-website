@@ -3,98 +3,98 @@
 /* bg color */
 body,
 .wrapper,
-.onovo-overlay {
+.genkiz-overlay {
     background-color: $theme_bg_color;
 }
-.onovo-number .num,
-.onovo-ticker-slider .title, 
-.onovo-ticker-slider .title a,
-.onovo-counter .num, 
-.onovo-counter .num-after,
-.onovo-history-item .subtitle,
-.onovo-team-item .num {
+.genkiz-number .num,
+.genkiz-ticker-slider .title, 
+.genkiz-ticker-slider .title a,
+.genkiz-counter .num, 
+.genkiz-counter .num-after,
+.genkiz-history-item .subtitle,
+.genkiz-team-item .num {
     color: $theme_bg_color;
 }
 
 /*headings*/
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, 
-h1.onovo-title-1,
-h2.onovo-title-1,
-h3.onovo-title-1,
-h4.onovo-title-1,
-h5.onovo-title-1,
-h6.onovo-title-1,
-.onovo-title-1,
-h1.onovo-title-2,
-h2.onovo-title-2,
-h3.onovo-title-2,
-h4.onovo-title-2,
-h5.onovo-title-2,
-h6.onovo-title-2,
-.onovo-title-2,
-h1.onovo-title-3,
-h2.onovo-title-3,
-h3.onovo-title-3,
-h4.onovo-title-3,
-h5.onovo-title-3,
-h6.onovo-title-3,
-.onovo-title-3 {
+h1.genkiz-title-1,
+h2.genkiz-title-1,
+h3.genkiz-title-1,
+h4.genkiz-title-1,
+h5.genkiz-title-1,
+h6.genkiz-title-1,
+.genkiz-title-1,
+h1.genkiz-title-2,
+h2.genkiz-title-2,
+h3.genkiz-title-2,
+h4.genkiz-title-2,
+h5.genkiz-title-2,
+h6.genkiz-title-2,
+.genkiz-title-2,
+h1.genkiz-title-3,
+h2.genkiz-title-3,
+h3.genkiz-title-3,
+h4.genkiz-title-3,
+h5.genkiz-title-3,
+h6.genkiz-title-3,
+.genkiz-title-3 {
     color: $heading_color;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, 
-h1.onovo-title-1,
-h2.onovo-title-1,
-h3.onovo-title-1,
-h4.onovo-title-1,
-h5.onovo-title-1,
-h6.onovo-title-1,
-.onovo-title-1,
-h1.onovo-title-2,
-h2.onovo-title-2,
-h3.onovo-title-2,
-h4.onovo-title-2,
-h5.onovo-title-2,
-h6.onovo-title-2,
-.onovo-title-2,
-h1.onovo-title-3,
-h2.onovo-title-3,
-h3.onovo-title-3,
-h4.onovo-title-3,
-h5.onovo-title-3,
-h6.onovo-title-3,
-.onovo-title-3 {
+h1.genkiz-title-1,
+h2.genkiz-title-1,
+h3.genkiz-title-1,
+h4.genkiz-title-1,
+h5.genkiz-title-1,
+h6.genkiz-title-1,
+.genkiz-title-1,
+h1.genkiz-title-2,
+h2.genkiz-title-2,
+h3.genkiz-title-2,
+h4.genkiz-title-2,
+h5.genkiz-title-2,
+h6.genkiz-title-2,
+.genkiz-title-2,
+h1.genkiz-title-3,
+h2.genkiz-title-3,
+h3.genkiz-title-3,
+h4.genkiz-title-3,
+h5.genkiz-title-3,
+h6.genkiz-title-3,
+.genkiz-title-3 {
     font-family: $heading_font_family;
 }
 @media (min-width: 993px) {
-    .h1, h1, h1.onovo-title-1, .onovo-title-1 {
+    .h1, h1, h1.genkiz-title-1, .genkiz-title-1 {
         font-size: $heading_font_size;
     }
 }
-.h1, h1, h1.onovo-title-1, .onovo-title-1 {
+.h1, h1, h1.genkiz-title-1, .genkiz-title-1 {
     font-weight: $heading_font_weight;
 }
 @media (min-width: 993px) {
-    .h1, h1, h1.onovo-title-1, .onovo-title-1 {
+    .h1, h1, h1.genkiz-title-1, .genkiz-title-1 {
         letter-spacing: $heading_letter_spacing;
     }
 }
-.h1, h1, h1.onovo-title-1, .onovo-title-1 {
+.h1, h1, h1.genkiz-title-1, .genkiz-title-1 {
     text-transform: $heading_font_transform;
 }
 @media (min-width: 993px) {
-    .h2, h2, h2.onovo-title-2, .onovo-title-2 {
+    .h2, h2, h2.genkiz-title-2, .genkiz-title-2 {
         font-size: $heading2_font_size;
     }
 }
-.h2, h2, h2.onovo-title-2, .onovo-title-2 {
+.h2, h2, h2.genkiz-title-2, .genkiz-title-2 {
     font-weight: $heading2_font_weight;
 }
 @media (min-width: 993px) {
-    .h2, h2, h2.onovo-title-2, .onovo-title-2 {
+    .h2, h2, h2.genkiz-title-2, .genkiz-title-2 {
         letter-spacing: $heading2_letter_spacing;
     }
 }
-.h2, h2, h2.onovo-title-2, .onovo-title-2 {
+.h2, h2, h2.genkiz-title-2, .genkiz-title-2 {
     text-transform: $heading2_font_transform;
 }
 @media (min-width: 993px) {
@@ -211,26 +211,26 @@ legend {
 }
 
 /* intro */
-.onovo-intro .onovo-title-1,
-.onovo-intro.intro--black .onovo-title-1,
-.onovo-intro .onovo-title-1.onovo-text-white,
-.onovo-intro.intro--black .onovo-title-1.onovo-text-white,
-.onovo-intro .onovo-title-1.onovo-text-black,
-.onovo-intro.intro--black .onovo-title-1.onovo-text-black {
+.genkiz-intro .genkiz-title-1,
+.genkiz-intro.intro--black .genkiz-title-1,
+.genkiz-intro .genkiz-title-1.genkiz-text-white,
+.genkiz-intro.intro--black .genkiz-title-1.genkiz-text-white,
+.genkiz-intro .genkiz-title-1.genkiz-text-black,
+.genkiz-intro.intro--black .genkiz-title-1.genkiz-text-black {
     color: $intro_color;
 }
-.onovo-intro .onovo-subtitle-2,
-.onovo-intro.intro--black .onovo-subtitle-2,
-.onovo-intro .onovo-subtitle-2.onovo-text-white,
-.onovo-intro.intro--black .onovo-subtitle-2.onovo-text-white,
-.onovo-intro .onovo-subtitle-2.onovo-text-black,
-.onovo-intro.intro--black .onovo-subtitle-2.onovo-text-black {
+.genkiz-intro .genkiz-subtitle-2,
+.genkiz-intro.intro--black .genkiz-subtitle-2,
+.genkiz-intro .genkiz-subtitle-2.genkiz-text-white,
+.genkiz-intro.intro--black .genkiz-subtitle-2.genkiz-text-white,
+.genkiz-intro .genkiz-subtitle-2.genkiz-text-black,
+.genkiz-intro.intro--black .genkiz-subtitle-2.genkiz-text-black {
     color: $intro_subtitle_color;
 }
-.onovo-intro .onovo-breadcrums ul li, 
-.onovo-intro .onovo-breadcrums ul li a
-.onovo-intro.intro--black .onovo-breadcrums ul li, 
-.onovo-intro.intro--black .onovo-breadcrums ul li a {
+.genkiz-intro .genkiz-breadcrums ul li, 
+.genkiz-intro .genkiz-breadcrums ul li a
+.genkiz-intro.intro--black .genkiz-breadcrums ul li, 
+.genkiz-intro.intro--black .genkiz-breadcrums ul li a {
     color: $intro_bread_color;
 }
 
@@ -242,68 +242,68 @@ blockquote::before,
 .wp-block-quote.is-large::before,
 .wp-block-quote.is-style-large::before,
 .wp-block-pullquote::before,
-.onovo-hover-1::before,
-.onovo-hover-2::before,
-.onovo-hover-3::before,
-.onovo-hover-btn > .arrow::after,
-.onovo-hover-btn > i::after,
-.onovo-hover-btn::after,
-a.onovo-lnk.lnk--active::after,
-span.onovo-lnk.lnk--active::after,
-.onovo-lnk.lnk--active a::after,
-.onovo-btn.btn--border.btn--color::after,
-.onovo-btn.btn--active::before,
-.onovo-btn .arrow::before,
-.onovo-head-btn .arrow::before,
-.onovo-btn.btn--border .arrow::after,
-.onovo-btn.btn--border i::after,
-.onovo-social-2 ul li a::before,
-.onovo-social-active ul li a::before,
-.onovo-stars,
+.genkiz-hover-1::before,
+.genkiz-hover-2::before,
+.genkiz-hover-3::before,
+.genkiz-hover-btn > .arrow::after,
+.genkiz-hover-btn > i::after,
+.genkiz-hover-btn::after,
+a.genkiz-lnk.lnk--active::after,
+span.genkiz-lnk.lnk--active::after,
+.genkiz-lnk.lnk--active a::after,
+.genkiz-btn.btn--border.btn--color::after,
+.genkiz-btn.btn--active::before,
+.genkiz-btn .arrow::before,
+.genkiz-head-btn .arrow::before,
+.genkiz-btn.btn--border .arrow::after,
+.genkiz-btn.btn--border i::after,
+.genkiz-social-2 ul li a::before,
+.genkiz-social-active ul li a::before,
+.genkiz-stars,
 .pager a:hover,
 .page-links .post-page-numbers:hover,
 .pager .current,
 .page-links .current,
 .preloader::before,
 .preloader__double-bounce,
-.onovo-menu-overlay,
-.onovo-service-item .image,
-.onovo-bubble .bubble-1,
-.onovo-bubble .bubble-2,
-.onovo-bubble .bubble-3,
-.onovo-services-showcase .items .img-circle,
-.onovo-filter.filter--default .onovo-filter-nav-active,
-.onovo-showcase .img-circle,
-.onovo-video .play::before,
-.onovo-cta-social .cta-img-circle,
-.onovo-blog-item .desc .date,
+.genkiz-menu-overlay,
+.genkiz-service-item .image,
+.genkiz-bubble .bubble-1,
+.genkiz-bubble .bubble-2,
+.genkiz-bubble .bubble-3,
+.genkiz-services-showcase .items .img-circle,
+.genkiz-filter.filter--default .genkiz-filter-nav-active,
+.genkiz-showcase .img-circle,
+.genkiz-video .play::before,
+.genkiz-cta-social .cta-img-circle,
+.genkiz-blog-item .desc .date,
 .wp-block-latest-posts__post-date,
-.onovo-post-date .date,
-.onovo-blog-slide-item .desc .date,
-.onovo-pricing-item:hover a.onovo-btn.btn--color::after,
-.onovo-pricing-item:hover .onovo-btn.btn--color::after,
-.onovo-faq-item .onovo-collapse-btn::after,
+.genkiz-post-date .date,
+.genkiz-blog-slide-item .desc .date,
+.genkiz-pricing-item:hover a.genkiz-btn.btn--color::after,
+.genkiz-pricing-item:hover .genkiz-btn.btn--color::after,
+.genkiz-faq-item .genkiz-collapse-btn::after,
 .tags-links a,
 .col-sidebar .tagcloud a,
 .wp-block-tag-cloud a,
 .sidebar__tag-item,
-.onovo-post-tags a {
+.genkiz-post-tags a {
     background-color: $theme_color;
 }
-.onovo-team-item:hover .num,
-.onovo-cta-info .email,
-.onovo-cta-info .email a,
+.genkiz-team-item:hover .num,
+.genkiz-cta-info .email,
+.genkiz-cta-info .email a,
 .wp-block-calendar a {
     color: $theme_color;
 }
-.onovo-social-2 ul li a:hover,
-.onovo-social-active ul li a:hover,
+.genkiz-social-2 ul li a:hover,
+.genkiz-social-active ul li a:hover,
 .pager a:hover,
 .page-links .post-page-numbers:hover {
     border-color: $theme_color;
 }
 @media (max-width: 1024px) {
-    .onovo-filter.filter--default ul li button.item--active,
+    .genkiz-filter.filter--default ul li button.item--active,
     .comment .comment-item__reply a:hover, 
     .comment .comment-item__reply a:focus, 
     .comment .comment-item__reply a:hover::before, 
@@ -313,82 +313,82 @@ span.onovo-lnk.lnk--active::after,
 }
 
 /* buttons */
-.onovo-hover-btn::before,
-.onovo-btn .arrow::after,
+.genkiz-hover-btn::before,
+.genkiz-btn .arrow::after,
 button[type="submit"], 
 input[type="submit"] {
     background-color: $btn_color;
 }
-.onovo-hover-btn::after,
+.genkiz-hover-btn::after,
 button[type="submit"]:hover,
 input[type="submit"]:hover,
-.onovo-btn.btn--border.btn--color::after,
-.onovo-btn.btn--active::before,
-.onovo-btn .arrow::before,
-.onovo-head-btn .arrow::before,
-.onovo-btn.btn--border .arrow::after,
-.onovo-btn.btn--border i::after,
-.onovo-pricing-item:hover a.onovo-btn.btn--color::after,
-.onovo-pricing-item:hover .onovo-btn.btn--color::after {
+.genkiz-btn.btn--border.btn--color::after,
+.genkiz-btn.btn--active::before,
+.genkiz-btn .arrow::before,
+.genkiz-head-btn .arrow::before,
+.genkiz-btn.btn--border .arrow::after,
+.genkiz-btn.btn--border i::after,
+.genkiz-pricing-item:hover a.genkiz-btn.btn--color::after,
+.genkiz-pricing-item:hover .genkiz-btn.btn--color::after {
     background-color: $btn_hover_color;
 }
-button[type="submit"].onovo-btn:hover {
+button[type="submit"].genkiz-btn:hover {
     background-color: transparent;
 }
-a.onovo-btn,
-.onovo-btn,
-.onovo-head-btn,
+a.genkiz-btn,
+.genkiz-btn,
+.genkiz-head-btn,
 button[type="submit"],
 input[type="submit"],
-body div.wpforms-container .wpforms-form .onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn[type="submit"] {
+body div.wpforms-container .wpforms-form .genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn[type="submit"] {
     font-family: $btn_font_family;
 }
-a.onovo-btn,
-.onovo-btn,
+a.genkiz-btn,
+.genkiz-btn,
 button[type="submit"],
 input[type="submit"],
-body div.wpforms-container .wpforms-form .onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn[type="submit"] {
+body div.wpforms-container .wpforms-form .genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn[type="submit"] {
     font-size: $btn_font_size;
 }
-a.onovo-btn,
-.onovo-btn,
+a.genkiz-btn,
+.genkiz-btn,
 button[type="submit"],
 input[type="submit"],
-body div.wpforms-container .wpforms-form .onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn[type="submit"] {
+body div.wpforms-container .wpforms-form .genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn[type="submit"] {
     font-weight: $btn_font_weight;
 }
-a.onovo-btn,
-.onovo-btn,
+a.genkiz-btn,
+.genkiz-btn,
 button[type="submit"],
 input[type="submit"],
-body div.wpforms-container .wpforms-form .onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn[type="submit"] {
+body div.wpforms-container .wpforms-form .genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn[type="submit"] {
     letter-spacing: $btn_letter_spacing;
 }
-a.onovo-btn,
-.onovo-btn,
+a.genkiz-btn,
+.genkiz-btn,
 button[type="submit"],
 input[type="submit"],
-body div.wpforms-container .wpforms-form .onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn[type="submit"] {
+body div.wpforms-container .wpforms-form .genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn[type="submit"] {
     text-transform: $btn_font_transform;
 }
-a.onovo-btn,
-.onovo-btn,
+a.genkiz-btn,
+.genkiz-btn,
 button[type="submit"],
 input[type="submit"],
-body div.wpforms-container .wpforms-form .onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn,
-body div.wpforms-container .wpforms-form button.onovo-btn[type="submit"],
-.onovo-hover-btn::before {
+body div.wpforms-container .wpforms-form .genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn,
+body div.wpforms-container .wpforms-form button.genkiz-btn[type="submit"],
+.genkiz-hover-btn::before {
     border-radius: $btn_border_radius;
 }
 
