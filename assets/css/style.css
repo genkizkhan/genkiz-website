@@ -1024,7 +1024,7 @@ blockquote::before {
   left: 70px;
   width: 80px;
   height: 80px;
-  background-color: #DFBC27;
+  background-color: #ffd700;
   background-image: url(../images/quote.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1381,7 +1381,7 @@ hr {
   -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
   transform: scale(0);
   -webkit-transform: scale(0);
-  background: #DFBC27;
+  background: #ffd700;
   pointer-events: none;
 }
  
@@ -1430,7 +1430,7 @@ hr {
   -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
   transform: scale(0);
   -webkit-transform: scale(0);
-  background: #DFBC27;
+  background: #ffd700;
   transform-origin: center center;
 }
 
@@ -1458,7 +1458,7 @@ hr {
   -webkit-transition: transform 0.4s cubic-bezier(0.3, 0, 0.3, 1);
   transform: scaleY(0);
   -webkit-transform: scaleY(0);
-  background: #DFBC27;
+  background: #ffd700;
   transform-origin: bottom center;
   z-index: 1;
 }
@@ -1539,7 +1539,7 @@ span.onovo-lnk.lnk--white::after,
 a.onovo-lnk.lnk--active::after,
 span.onovo-lnk.lnk--active::after,
 .onovo-lnk.lnk--active a::after {
-  background: #DFBC27;
+  background: #ffd700;
 }
 
 a.onovo-lnk.lnk--revert::after,
@@ -1663,7 +1663,7 @@ a.onovo-btn-circle,
 }
 
 .onovo-btn.btn--border.btn--color::after {
-  background: #DFBC27;
+  background: #ffd700;
 }
 
 .onovo-btn.btn--white::after {
@@ -1676,7 +1676,7 @@ a.onovo-btn.btn--active,
 }
 
 .onovo-btn.btn--active::before {
-  background: #DFBC27;
+  background: #ffd700;
 }
 
 .onovo-btn.btn--active::after {
@@ -1746,7 +1746,7 @@ a.onovo-btn.btn--border.btn--color:hover,
   right: 1px;
   bottom: 1px;
   top: 1px;
-  background: #DFBC27;
+  background: #ffd700;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
@@ -1815,7 +1815,7 @@ a.onovo-btn.btn--border.btn--color:hover,
 
 .onovo-btn.btn--border .arrow::after,
 .onovo-btn.btn--border i::after {
-  background: #DFBC27;
+  background: #ffd700;
 }
 
 .onovo-btn.btn--border.btn--white .arrow::after,
@@ -1994,7 +1994,7 @@ button > span,
 
 .onovo-social-2 ul li a::before,
 .onovo-social-active ul li a::before {
-  background: #DFBC27;
+  background: #ffd700;
 }
 
 .onovo-social-2 ul li a i,
@@ -2006,7 +2006,7 @@ button > span,
 .onovo-social-2 ul li a:hover,
 .onovo-social-active ul li a:hover {
   color: #000;
-  border-color: #DFBC27;
+  border-color: #ffd700;
 }
 
 /* stars */
@@ -2020,7 +2020,7 @@ button > span,
   line-height: 28px;
   font-weight: 800;
   color: #000;
-  background: #DFBC27;
+  background: #ffd700;
   border-radius: 26px;
   -webkit-border-radius: 26px;
 }
@@ -2274,15 +2274,15 @@ button > span,
 
 .pager a:hover,
 .page-links .post-page-numbers:hover {
-  background: #DFBC27;
-  border-color: #DFBC27;
+  background: #ffd700;
+  border-color: #ffd700;
   color: #000;
 }
 
 .pager .current,
 .page-links .current {
   color: #000;
-  background-color: #DFBC27;
+  background-color: #ffd700;
 }
 
 .onovo-prev,
@@ -2424,7 +2424,7 @@ button > span,
   height: 100%;
   transform: scaleY(1);
   -webkit-transform: scaleY(1);
-  background: #DFBC27;
+  background: #ffd700;
   transform-origin: top center;
 }
 
@@ -2471,7 +2471,7 @@ button > span,
   animation: bounce 2s infinite ease-in-out;
   opacity: 1;
   border-radius: 50%;
-  background-color: #DFBC27;
+  background-color: #ffd700;
 }
 
 .preloader__double-bounce--delay {
@@ -2895,7 +2895,7 @@ a.onovo-menu-btn,
   height: 100%;
   transform: scaleY(0);
   -webkit-transform: scaleY(0);
-  background: #DFBC27;
+  background: #ffd700;
   transform-origin: top center;
   animation: onovo-menu-overlay-close 0.9s forwards cubic-bezier(0.3, 0, 0.3, 1);
 }
@@ -4076,7 +4076,7 @@ ul.onovo-footer-menu li {
   justify-content: center;
   align-items: center;
   line-height: 1;
-  background: #DFBC27;
+  background: #ffd700;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   z-index: 2;
@@ -4265,7 +4265,7 @@ ul.onovo-footer-menu li {
   right: -10%;
   border-radius: 100%;
   -webkit-border-radius: 100%;
-  background: #DFBC27;
+  background: #ffd700;
   opacity: 0;
   transform: scale(0.3);
 }
@@ -4303,7 +4303,7 @@ ul.onovo-footer-menu li {
   left: -40%;
   border-radius: 100%;
   -webkit-border-radius: 100%;
-  background: #DFBC27;
+  background: #ffd700;
   opacity: 0;
   transform: scale(0.25);
 }
@@ -4341,7 +4341,7 @@ ul.onovo-footer-menu li {
   left: 30%;
   border-radius: 100%;
   -webkit-border-radius: 100%;
-  background: #DFBC27;
+  background: #ffd700;
   opacity: 0;
   transform: scale(0.5);
 }
@@ -4521,7 +4521,7 @@ ul.onovo-footer-menu li {
   left: 28%;
   width: 366px;
   height: 366px;
-  background: #DFBC27;
+  background: #ffd700;
   border-radius: 100%;
   transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
   -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
@@ -4818,7 +4818,7 @@ ul.onovo-footer-menu li {
   padding: 0 40px;
   height: 85px;
   line-height: 85px;
-  background: #DFBC27;
+  background: #ffd700;
   border-radius: 85px;
   -webkit-border-radius: 85px;
   transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
@@ -4979,7 +4979,7 @@ ul.onovo-footer-menu li {
   right: 200px;
   width: 420px;
   height: 420px;
-  background: #DFBC27;
+  background: #ffd700;
   border-radius: 100%;
   transform: scale(1);
   transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
@@ -5112,7 +5112,7 @@ ul.onovo-footer-menu li {
 }
 
 .onovo-project-info > ul > li strong {
-  color: #DFBC27;
+  color: #ffd700;
 }
 
 @media (min-width: 1025px) {
@@ -5205,7 +5205,7 @@ ul.onovo-footer-menu li {
     -webkit-border-radius: 85px;
   }
   .onovo-filter.filter--default ul li button.item--active {
-    background: #DFBC27;
+    background: #ffd700;
   }
   .onovo-portfolio-item-list {
     display: block;
@@ -5329,7 +5329,7 @@ ul.onovo-footer-menu li {
 }
 
 .onovo-team-item:hover .num {
-  color: #DFBC27;
+  color: #ffd700;
 }
 
 @media (max-width: 1024px) {
@@ -5570,7 +5570,7 @@ ul.onovo-footer-menu li {
   top: -10px;
   right: -10px;
   bottom: -10px;
-  background: #DFBC27;
+  background: #ffd700;
   border-radius: 100%;
   -webkit-border-radius: 100%;
 }
@@ -5684,7 +5684,7 @@ ul.onovo-footer-menu li {
 }
 
 .onovo-cta-text a {
-  color: #DFBC27;
+  color: #ffd700;
   font-size: 40px;
   font-weight: 500;
   line-height: 1em;
@@ -5702,13 +5702,13 @@ ul.onovo-footer-menu li {
 
 .onovo-cta-info .email {
   font-size: 40px;
-  color: #DFBC27;
+  color: #ffd700;
   font-weight: 500;
   line-height: 1;
 }
 
 .onovo-cta-info .email a {
-  color: #DFBC27;
+  color: #ffd700;
   text-decoration: underline;
 }
 
@@ -5741,7 +5741,7 @@ ul.onovo-footer-menu li {
 
 .onovo-cta-social .cta-img-circle {
   position: absolute;
-  background: #DFBC27;
+  background: #ffd700;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   animation: onovoCtaCircle 1.5s cubic-bezier(0.3, 0, 0.3, 1) infinite;
@@ -5937,7 +5937,7 @@ ul.onovo-footer-menu li {
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
-  background: #DFBC27;
+  background: #ffd700;
   border-radius: 36px;
   -webkit-border-radius: 36px;
 }
@@ -6025,7 +6025,7 @@ ul.onovo-footer-menu li {
   line-height: 35px;
   border-radius: 35px;
   -webkit-border-radius: 35px;
-  background: #DFBC27;
+  background: #ffd700;
 }
 
 .onovo-blog-slide-item .desc .date,
@@ -6332,7 +6332,7 @@ ul.onovo-footer-menu li {
 
 .onovo-pricing-item:hover a.onovo-btn.btn--color::after,
 .onovo-pricing-item:hover .onovo-btn.btn--color::after {
-  background: #DFBC27;
+  background: #ffd700;
   transform: scaleY(1);
   -webkit-transform: scaleY(1);
   transform-origin: top center;
@@ -6730,7 +6730,7 @@ body .onovo-subscribe-form .submit-container {
   -webkit-transition: transform 0.4s cubic-bezier(0.3, 0, 0.3, 1);
   transform: scaleY(0);
   -webkit-transform: scaleY(0);
-  background: #DFBC27;
+  background: #ffd700;
   transform-origin: bottom center;
 }
 
@@ -7100,7 +7100,7 @@ body .onovo-subscribe-form .submit-container {
   .comment .comment-item__reply a:focus::before {
     outline: none;
     color: #000;
-    background-color: #DFBC27;
+    background-color: #ffd700;
   }
 }
 .comment .comment-item--replyed {
@@ -7355,7 +7355,7 @@ body .onovo-subscribe-form .submit-container {
   overflow: hidden;
   display: inline-block;
   vertical-align: top;
-  background: #DFBC27;
+  background: #ffd700;
   border: none;
   font-size: 15px !important;
   line-height: 1.7;
@@ -8046,21 +8046,21 @@ span.onovo-lnk.lnk--active::after,
 .wp-block-tag-cloud a,
 .sidebar__tag-item,
 .onovo-post-tags a {
-  background-color: #DFBC27;
+  background-color: #ffd700;
 }
 
 .onovo-team-item:hover .num,
 .onovo-cta-info .email,
 .onovo-cta-info .email a,
 .wp-block-calendar a {
-  color: #DFBC27;
+  color: #ffd700;
 }
 
 .onovo-social-2 ul li a:hover,
 .onovo-social-active ul li a:hover,
 .pager a:hover,
 .page-links .post-page-numbers:hover {
-  border-color: #DFBC27;
+  border-color: #ffd700;
 }
 
 @media (max-width: 1024px) {
@@ -8069,7 +8069,7 @@ span.onovo-lnk.lnk--active::after,
   .comment .comment-item__reply a:focus,
   .comment .comment-item__reply a:hover::before,
   .comment .comment-item__reply a:focus::before {
-    background: #DFBC27;
+    background: #ffd700;
   }
 }
 /* buttons */
@@ -8091,7 +8091,7 @@ input[type=submit]:hover,
 .onovo-btn.btn--border i::after,
 .onovo-pricing-item:hover a.onovo-btn.btn--color::after,
 .onovo-pricing-item:hover .onovo-btn.btn--color::after {
-  background-color: #DFBC27;
+  background-color: #ffd700;
 }
 
 button[type=submit].onovo-btn:hover {
@@ -8167,7 +8167,7 @@ body div.wpforms-container .wpforms-form button.onovo-btn[type=submit],
 
 /* Preloader Color */
 .preloader__double-bounce {
-  background-color: #DFBC27;
+  background-color: #ffd700;
 }
 
 /* --options end */
