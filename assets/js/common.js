@@ -1,9 +1,9 @@
 /**
 *	Genkiz - Creative Portfolio Agency HTML Template
 *	Version: 1.1
-*	Author: bslthemes
-*	Author URL: http://themeforest.net/user/bslthemes
-*	Copyright © Genkiz by bslthemes. All Rights Reserved.
+*	Author: .genkiz
+*	Author URL: http://themeforest.net/user/.genkiz
+*	Copyright © Genkiz by .genkiz. All Rights Reserved.
 **/
 
 ( function( $ ) {
