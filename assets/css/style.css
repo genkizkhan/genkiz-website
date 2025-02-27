@@ -294,7 +294,7 @@ body {
   height: auto !important;
   font-size: 18px;
   color: #1B252E;
-  font-family: "Epilogue", sans-serif;
+  font-family: "Afacad Flux", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -337,7 +337,7 @@ img {
 input,
 textarea,
 button {
-  font-family: "Epilogue";
+  font-family: "Afacad Flux";
 }
 
 label {
@@ -619,7 +619,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  font-family: "Epilogue";
+  font-family: "Afacad Flux";
   margin: 0;
   margin-bottom: 15px;
   color: #000;
@@ -925,7 +925,7 @@ label,
 legend {
   display: block;
   padding-bottom: 20px;
-  font-family: "Epilogue";
+  font-family: "Afacad Flux";
 }
 
 fieldset {
@@ -7806,7 +7806,7 @@ h4.genkiz-title-3,
 h5.genkiz-title-3,
 h6.genkiz-title-3,
 .genkiz-title-3 {
-  font-family: "Epilogue";
+  font-family: "Afacad Flux";
 }
 
 @media (min-width: 993px) {
@@ -7930,7 +7930,7 @@ textarea,
 button,
 label,
 legend {
-  font-family: "Epilogue";
+  font-family: "Afacad Flux";
 }
 
 html,
@@ -8109,7 +8109,7 @@ input[type=submit],
 body div.wpforms-container .wpforms-form .genkiz-btn,
 body div.wpforms-container .wpforms-form button.genkiz-btn,
 body div.wpforms-container .wpforms-form button.genkiz-btn[type=submit] {
-  font-family: "Epilogue";
+  font-family: "Afacad Flux";
 }
 
 a.genkiz-btn,
